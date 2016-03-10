@@ -1,0 +1,398 @@
+﻿body{
+ margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 
+
+ --------------Czcionki-----------------
+
+ */
+ 
+ @font-face {
+  font-family: 'Czcionka';
+  src: url('font/BAUHS93.TTF');
+}
+
+ @font-face {
+  font-family: 'Candara';
+  src: url('font/Candara.ttf');
+}
+
+/* 
+
+ --------------Intro-----------------
+
+ */
+
+
+.intro{
+width:100%;
+height:2000px;
+background-image:url('darkgray.jpg');
+background-repeat:repeat;
+text-align:center;
+}
+
+
+.loading{
+clear:both;
+padding-top:100px;
+font-family:Czcionka;
+font-size:36px;
+color:#c2fffd;
+text-shadow:0px 0px 5px #0084fe;
+}
+
+/* 
+
+ --------------INTRO - Progressbar-----------------
+
+ */
+
+
+.wrapper{
+padding-top:50px;
+width:500px;
+text-align:left;
+}
+
+.progres-bar{
+width:100%;
+background-color:#222222;
+padding:3px;
+border-radius:3px;
+box-shadow: inset 0 1px 3px rgba(0,0,0, .2);
+}
+
+.progres-bar-fill{
+display:block;
+height:22px;
+background-color:#c2fffd;
+
+border-radius:3px;
+box-shadow:0px 0px 5px #0084fe;
+transition: width 1000ms ease-in-out;
+}
+
+.wait{
+padding-top:80px;
+font-family:Czcionka;
+font-size:36px;
+color:#c2fffd;
+text-shadow:0px 0px 5px #0084fe;
+
+
+-webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.procenty{
+font-family:Czcionka;
+font-size:36px;
+color:#c2fffd;
+text-shadow:0px 0px 5px #0084fe;
+}
+
+.per{
+font-family:Czcionka;
+font-size:36px;
+color:#c2fffd;
+text-shadow:0px 0px 5px #0084fe;
+}
+
+/* 
+
+ --------------Main page header-----------------
+
+ */
+ 
+ /* 
+
+ --------------Logo-----------------
+
+ */
+ 
+ 
+ 
+ /* 
+
+ --------------Login form-----------------
+
+ */
+ 
+ .login{
+ width:100%;
+height:2000px;
+background-image:url('darkgray.jpg');
+background-repeat:repeat;
+text-align:center;
+ }
+ 
+ .loginform{
+ width:500px;
+ height:500px;
+ background-image:url('img/login-back.png');
+ text-align:left;
+ }
+ 
+ .pole{
+ padding-left:80px;
+ font-family:Czcionka;
+font-size:26px;
+color:#c2fffd;
+text-shadow:0px 0px 5px #0084fe;
+padding-top:30px;
+ padding-right:80px;
+ }
+ 
+ .srodek{
+ background-color:rgba(0,0,128, 0.9);
+ vertical-align:center;
+ }
+ 
+ .srodek input{
+ float:right;
+ border-top: 0px;
+border-left: 0px;
+border-right: 0px;
+border-bottom:0px ;
+ border-radius:0px;
+height:38px;
+width:180px;
+color:#c2fffd;
+font-size:26px;
+font-family:Czcionka;
+background-color:rgba(50,50,158, 0.9);
+text-shadow:0px 0px 5px #0084fe;
+padding-left:10px;
+ }
+ 
+ .logintytul{
+ padding-left:5px;
+ }
+ 
+ .header{
+ width:100%;
+ height:100%;
+ background-image:url('img/indexbackground.jpg');
+ }
+ 
+ .menu{
+ float:right;
+ margin-top:20px;
+ margin-right:200px;
+ }
+ .zielone li{
+ display: block;
+ font-family:Candara;
+ font-size:26px;
+ width:300px;
+ background-color:rgba(180,255,150,0.3);
+ margin-top:2px;
+ padding-left:30px;
+
+ }
+ 
+  .zielone li:hover{
+   background-color:rgba(180,255,150,0.6);
+   box-shadow:0px 0px 5px #4e4;
+   
+  }
+ .zielone li a{
+ color:rgb(180,255,150);
+text-decoration:none;
+list-style: none;
+list-style-type: none;
+
+
+}
+
+ .niebieskie li{
+ display: block;
+ font-family:Candara;
+ font-size:26px;
+ width:300px;
+ background-color:rgba(180,150,255,0.3);
+ margin-top:2px;
+ padding-left:30px;
+ }
+ 
+ .niebieskie li:hover{
+  background-color:rgba(180,150,255,0.6);
+  box-shadow:0px 0px 5px #53e;
+ }
+ .niebieskie li a{
+color:rgb(180,150,255);
+text-decoration:none;
+list-style: none;
+list-style-type: none;
+
+}
+ 
+ .szare li{
+ display: block;
+ font-family:Candara;
+ font-size:26px;
+ width:300px;
+ background-color:rgba(200,200,200,0.1);
+ margin-top:2px;
+ padding-left:30px;
+text-align:left;
+color:white;
+
+ }
+ 
+ .planets{
+ float:left;
+ margin-left:100px;
+ width:600px;
+ padding-top:20px;
+ 
+ 
+ }
+ 
+ .category{
+ width:85%;
+ background-color:rgba(240,60,0,0.1);
+ height:35px;
+ font-family:Candara;
+ font-size:28px;
+ color:rgb(240,60,0);
+  text-shadow:0px 0px 5px rgb(255,80,0);
+ border:2px solid rgba(240,60,0,0.6);
+ border-radius:5px;
+ }
+ 
+ .plan{
+ padding-left:15px;
+ }
+ 
+ .rodzaj{
+ margin-top:3px;
+ width:100%;
+ background-color:rgba(20,20,20,0.6);
+ font-family:Candara;
+ font-size:26px;
+ color:white;
+ border:2px solid rgba(240,60,0,0.6);
+ border-radius:5px;
+ }
+ 
+ .rodzaj li{
+  display: block;
+  background-color:rgba(100,100,100,0.1);
+ padding:2px;
+ margin-top:2px;
+ }
+  .rodzaj li a{
+ padding-left:5px;
+ text-decoration:none;
+ color:white;
+ }
+ 
+ .liczba{
+ float:right;
+ padding-right:5px;
+ }
+ 
+ .opis{
+ margin-top:20px;
+  width:100%;
+  background-color:rgba(150,150,150,0.1);
+  font-family:Candara;
+  border:2px solid rgba(150,150,150,0.6);
+ border-radius:5px;
+  
+ }
+ 
+ 
+ .opis img{
+ margin-top:2px;
+  border:2px solid rgba(100,100,250,0.6);
+ border-radius:5px;
+ }
+ 
+ .avi{
+ color:white;
+  font-size:26px;
+  text-shadow:0px 0px 5px rgb(250,250,250);
+  padding-left:15px;
+ }
+ 
+ 
+ .kupno{
+ margin-top:10px;
+ width:100%;
+overflow:hidden;
+ }
+ .avatar {
+ width:100px;
+float:left;
+overflow:hidden;
+ }
+ 
+ .avatar img{
+ border:2px solid rgba(100,100,250,0.6);
+ border-radius:5px;
+ width:80px;
+ height:80px;
+margin-left:20px;
+ }
+ 
+ .gora{
+ margin-top:2px;
+overflow:hidden;
+ float:right;
+ width:480px;
+ height:40px;
+ background-color:rgba(40,40,200,0.4);
+ font-size:28px;
+ color:rgb(228,230,255);
+ padding-left:20px;
+ text-shadow:0px 0px 5px rgb(0,0,250);
+ }
+ 
+  .dol{
+width:480px;
+ height:40px;
+float:right;
+   overflow:hidden;
+   font-size:28px;
+ color:white;
+ font-size:28px;
+ color:rgb(228,230,255);
+ padding-left:20px;
+ text-shadow:0px 0px 5px rgb(0,0,250);
+ }
